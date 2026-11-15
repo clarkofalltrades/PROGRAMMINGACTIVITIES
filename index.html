@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laboratory 10 - Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="utils-arrow.js"></script>
+    <main class="card">
+        <h1>Age Next Year</h1>
+        <p class="hint">Enter your name and age to see how old you will be next year.</p>
+
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" placeholder="e.g. Dionñe">
+
+        <label for="ageInput">Age</label>
+        <input type="number" id="ageInput" placeholder="e.g. 19" min="0">
+
+        <button id="submitBtn">Show result</button>
+
+        <p id="result" aria-live="polite"></p>
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
